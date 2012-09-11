@@ -31,6 +31,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/etc/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     vendor/htc/primou/proprietary/etc/firmware/default_org_wb.acdb:system/etc/firmware/default_org_wb.acdb
 
+# HW
+PRODUCT_COPY_FILES += \
+    vendor/htc/primou/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
+    vendor/htc/primou/proprietary/lib/hw/hwcomposer.msm7x30.so:system/lib/hw/hwcomposer.msm7x30.so
+
 # Wifi/BT firmware
 PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/etc/calibration:system/etc/calibration \
@@ -65,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/lib/liboemcamera.so:/system/lib/liboemcamera.so \
     vendor/htc/primou/proprietary/lib/libsurfaceflinger_client.so:/system/lib/libsurfaceflinger_client.so \
     vendor/htc/primou/proprietary/lib/libzoomTransition.so:system/lib/libzoomTransition.so \
-    vendor/htc/primou/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so 
 
 # Ril
 PRODUCT_COPY_FILES += \
