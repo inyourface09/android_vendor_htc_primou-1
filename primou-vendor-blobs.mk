@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_p2p_b1.bin:system/etc/firmware/fw_bcm4330_p2p_b1.bin \
     vendor/htc/primou/proprietary/bin/hostapd:system/bin/hostapd
     
+# HW
+PRODUCT_COPY_FILES += \
+	vendor/htc/primou/proprietary/lib/hw/hwcomposer.msm7x30.so:system/lib/hw/hwcomposer.msm7x30.so \
+	vendor/htc/primou/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so 
+	
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/bin/awb_camera:/system/bin/awb_camera \
@@ -66,10 +71,14 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/lib/libmmcamera_rawchipproc.so:system/lib/libmmcamera_rawchipproc.so \
     vendor/htc/primou/proprietary/lib/libmmipl.so:/system/lib/libmmipl.so \
     vendor/htc/primou/proprietary/lib/libmmjpeg.so:/system/lib/libmmjpeg.so \
+    vendor/htc/primou/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/htc/primou/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/htc/primou/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/htc/primou/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/htc/primou/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/htc/primou/proprietary/lib/liboemcamera.so:/system/lib/liboemcamera.so \
     vendor/htc/primou/proprietary/lib/libsurfaceflinger_client.so:/system/lib/libsurfaceflinger_client.so \
-    vendor/htc/primou/proprietary/lib/libzoomTransition.so:system/lib/libzoomTransition.so \
+    vendor/htc/primou/proprietary/lib/libzoomTransition.so:system/lib/libzoomTransition.so
 
 # Ril
 PRODUCT_COPY_FILES += \
