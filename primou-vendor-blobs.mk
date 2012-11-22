@@ -42,7 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_b1.bin:system/etc/firmware/fw_bcm4330_b1.bin \
     vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_p2p_b2.bin:system/etc/firmware/fw_bcm4330_p2p_b2.bin \
     vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_p2p_b1.bin:system/etc/firmware/fw_bcm4330_p2p_b1.bin \
-    vendor/htc/primou/proprietary/bin/hostapd:system/bin/hostapd
+    vendor/htc/primou/proprietary/bin/hostapd:system/bin/hostapd \
+    vendor/htc/primou/proprietary/bin/hostapd_cli:system/bin/hostapd_cli
     
 # HW
 PRODUCT_COPY_FILES += \
@@ -86,7 +87,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/htc/primou/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/htc/primou/proprietary/lib/liboemcamera.so:/system/lib/liboemcamera.so \
-    vendor/htc/primou/proprietary/lib/libzoomTransition.so:system/lib/libzoomTransition.so
+    vendor/htc/primou/proprietary/lib/libzoomTransition.so:system/lib/libzoomTransition.so \
+    vendor/htc/primou/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so
 
 # Ril
 PRODUCT_COPY_FILES += \
