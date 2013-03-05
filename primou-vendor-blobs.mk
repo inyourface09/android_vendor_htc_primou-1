@@ -24,6 +24,17 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/lib/libaudioalsa.so:/system/lib/libaudioalsa.so \
     vendor/htc/primou/proprietary/lib/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so
 
+# Wifi/BT Firmware
+PRODUCT_COPY_FILES += \
+    vendor/htc/primou/proprietary/etc/calibration:system/etc/calibration \
+    vendor/htc/primou/proprietary/etc/firmware/bcm4330.hcd:system/etc/firmware/bcm4330.hcd \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_apsta_b1.bin:system/etc/firmware/fw_bcm4330_apsta_b1.bin \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_apsta_b2.bin:system/etc/firmware/fw_bcm4330_apsta_b2.bin \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_b2.bin:system/etc/firmware/fw_bcm4330_b2.bin \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_b1.bin:system/etc/firmware/fw_bcm4330_b1.bin \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_p2p_b2.bin:system/etc/firmware/fw_bcm4330_p2p_b2.bin \
+    vendor/htc/primou/proprietary/etc/firmware/fw_bcm4330_p2p_b1.bin:system/etc/firmware/fw_bcm4330_p2p_b1.bin
+
 # HW
 PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
@@ -50,6 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Ril
 PRODUCT_COPY_FILES += \
+    vendor/htc/primou/proprietary/lib/libdiag.so:/system/lib/libdiag.so \
     vendor/htc/primou/proprietary/lib/libdll.so:/system/lib/libdll.so \
     vendor/htc/primou/proprietary/lib/libdsi_netctrl.so:/system/lib/libdsi_netctrl.so \
     vendor/htc/primou/proprietary/lib/libdsutils.so:/system/lib/libdsutils.so \
@@ -67,4 +79,5 @@ PRODUCT_COPY_FILES += \
     vendor/htc/primou/proprietary/bin/rmt_storage:/system/bin/rmt_storage \
     vendor/htc/primou/proprietary/bin/zcb:/system/bin/zcb \
     vendor/htc/primou/proprietary/lib/libgemini.so:/system/lib/libgemini.so \
-    vendor/htc/primou/proprietary/bin/hostapd:system/bin/hostapd
+    vendor/htc/primou/proprietary/bin/hostapd:/system/bin/hostapd \
+    vendor/htc/primou/proprietary/bin/hostapd_cli:/system/bin/hostapd_cli
